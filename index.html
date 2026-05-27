@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">Валенки</div>
+      <div class="nav-links">
+        <a href="#hero">Главная</a>
+        <a href="#problems">Проблемы</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <h1>Освободите время с AI-автоматизацией</h1>
+      <p>
+        Для предпринимателей и специалистов, которые устали тратить часы на рутину:
+        настраиваем умные сценарии, чтобы задачи выполнялись сами, а вы занимались главным.
+      </p>
+      <button>Салям Алекум</button>
+    </section>
+
+    <section id="problems">
+      <h2>Узнаете себя?</h2>
+    
+      <div class="cards">
+    
+        <div class="card">
+          <h3>Проблема 1</h3>
+          <p>Отвечаю на одни и те же вопросы клиентов по 10 раз в день</p>
+        </div>
+    
+        <div class="card">
+          <h3>Проблема 2</h3>
+          <p>Теряю заявки потому что не успеваю обработать вовремя</p>
+        </div>
+    
+        <div class="card">
+          <h3>Проблема 3</h3>
+          <p>Трачу часы на задачи которые можно автоматизировать</p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Наши услуги</h2>
+    
+      <div class="cards">
+    
+        <div class="card">
+          <h3>AI-чатбот для клиентов</h3>
+          <p>отвечает на вопросы 24/7 вместо тебя</p>
+        </div>
+    
+        <div class="card">
+          <h3>Автоматизация заявок</h3>
+          <p>заявки сами попадают в нужное место</p>
+        </div>
+    
+        <div class="card">
+          <h3>Умные уведомления</h3>
+          <p>клиент получает ответ мгновенно</p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2>Тарифы</h2>
+    
+      <div class="cards">
+    
+        <div class="card">
+          <h3>Старт</h3>
+          <p class="price">$299</p>
+          <ul>
+            <li>AI-чатбот</li>
+            <li>Настройка за 3 дня</li>
+            <li>Поддержка 1 месяц</li>
+          </ul>
+        </div>
+    
+        <div class="card">
+          <h3>Бизнес</h3>
+          <p class="price">$599</p>
+          <ul>
+            <li>Всё из Старта</li>
+            <li>Автоматизация заявок</li>
+            <li>Поддержка 3 месяца</li>
+          </ul>
+        </div>
+    
+        <div class="card">
+          <h3>Про</h3>
+          <p class="price">$999</p>
+          <ul>
+            <li>Всё из Бизнеса</li>
+            <li>Умные уведомления</li>
+            <li>Поддержка 6 месяцев</li>
+          </ul>
+        </div>
+    
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Оставьте заявку</h2>
+    
+      <form id="contactForm">
+    
+        <label>Ваше имя</label>
+        <input type="text" id="nameInput" placeholder="Например: Даниил">
+    
+        <label>Телефон</label>
+        <input type="tel" id="phoneInput" placeholder="+7 999 000 00 00">
+
+        <label>Ваш вопрос</label>
+        <textarea id="messageInput" placeholder="Напишите ваш вопрос..." rows="4"></textarea>
+    
+        <button id="submitBtn">Отправить заявку</button>
+    
+      </form>
+    
+      <p id="successMsg" style="display:none;">
+        Спасибо! Мы свяжемся с вами в ближайшее время.
+      </p>
+    
+    </section>
+
+    <footer>
+      <p>© 2025 Валенки. Все права защищены.</p>
+      <p>Telegram: @valenki_ai</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
