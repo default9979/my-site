@@ -245,7 +245,7 @@ footer {
 @media (max-width: 768px) {
 
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 16px;
     padding: 16px 20px;
     text-align: center;
@@ -271,8 +271,20 @@ footer {
   }
 
   .card {
-    width: 100%;
+    width: 90%;
     max-width: 400px;
   }
 
+}
+
+@media (max-width: 1024px) {
+  .card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links a {
+    font-size: 13px;
+  }
 }
