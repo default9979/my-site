@@ -1,20 +1,16 @@
 const form = document.getElementById("contactForm");
 const successMsg = document.getElementById("successMsg");
-const nameInput = document.getElementById("nameInput");
-const phoneInput = document.getElementById("phoneInput");
-const messageInput = document.getElementById("messageInput");
 
 form.addEventListener("submit", function(event) {
-   event.preventDefault(); 
+  const nameInput = document.getElementById("nameInput");
+  const phoneInput = document.getElementById("phoneInput");
+  const messageInput = document.getElementById("messageInput");
 
-    if (nameInput.value.trim() === "" || phoneInput.value.trim() === "" || messageInput.value.trim() === "") {
+  if (nameInput.value.trim() === "" || phoneInput.value.trim() === "") {
+    event.preventDefault();
     alert("Пожалуйста, заполните все поля");
     return;
   }
 
   successMsg.style.display = "block";
-  document.getElementById("submitBtn").disabled = true;
-  nameInput.value = "";
-  phoneInput.value = "";
-  messageInput.value = "";
 });
