@@ -1,3 +1,12 @@
+:root {
+  --color-primary: #9b4f6b;
+  --color-primary-dark: #7d3d56;
+  --color-bg: #fdf6f9;
+  --color-border: #f0e6e6;
+  --color-text: #2d2d2d;
+  --color-text-light: #7a7a7a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +14,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 nav {
@@ -16,11 +29,11 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid #f0e6e6;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .logo {
-  color: #9b4f6b;
+  color: var(--color-primary);
   font-size: 20px;
   font-weight: bold;
 }
@@ -31,32 +44,33 @@ nav {
 }
 
 .nav-links a {
-  color: #7a7a7a;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 15px;
 }
 
 .nav-links a:hover {
-  color: #9b4f6b;
+  color: var(--color-primary);
   transition: color 0.2s;
 }
 
 #hero {
-  background-color: #fdf6f9;
-  color: #2d2d2d;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   text-align: center;
   padding: 120px 20px;
 }
 
 #hero h1 {
   font-size: 42px;
-  color: #2d2d2d;
+  color: var(--color-text);
   margin-bottom: 16px;
+  font-family: 'Playfair Display', serif;
 }
 
 #hero p {
   font-size: 20px;
-  color: #7a7a7a;
+  color: var(--color-text-light);
   margin-bottom: 32px;
   max-width: 600px;
   margin-left: auto;
@@ -64,7 +78,7 @@ nav {
 }
 
 #hero button {
-  background-color: #9b4f6b;
+  background-color: var(--color-primary);
   color: white;
   padding: 14px 32px;
   border: none;
@@ -75,7 +89,7 @@ nav {
 }
 
 #hero button:hover {
-  background-color: #7d3d56;
+  background-color: var(--color-primary-dark);
 }
 
 #problems {
@@ -119,6 +133,7 @@ nav {
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .card {
@@ -128,6 +143,9 @@ nav {
   padding: 32px 24px;
   max-width: 280px;
   transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .card:hover {
@@ -149,8 +167,9 @@ nav {
 .price {
   font-size: 28px;
   font-weight: bold;
-  color: #9b4f6b;
+  color: var(--color-primary) !important;
   margin: 16px 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 .card ul {
@@ -212,7 +231,7 @@ nav {
 }
 
 #contactForm button {
-  background-color: #9b4f6b;
+  background-color: var(--color-primary);
   color: white;
   padding: 14px;
   border: none;
