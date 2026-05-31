@@ -5,6 +5,9 @@
   --color-border: #f0e6e6;
   --color-text: #2d2d2d;
   --color-text-light: #7a7a7a;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Nunito', sans-serif;
+  --size-heading: 56px;
 }
 
 * {
@@ -14,11 +17,11 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-body);
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
 }
 
 nav {
@@ -62,10 +65,10 @@ nav {
 }
 
 #hero h1 {
-  font-size: 42px;
+  font-size: var(--size-heading);
   color: var(--color-text);
   margin-bottom: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
 }
 
 #hero p {
