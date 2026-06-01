@@ -10,6 +10,11 @@
   --size-heading: 56px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -282,6 +287,13 @@ footer {
     text-align: center;
   }
 
+  html {
+    scroll-padding-top: 120px;
+  }
+
+  /* остальные стили... */
+}
+
   .nav-links {
     gap: 16px;
     flex-wrap: wrap;
@@ -313,4 +325,55 @@ footer {
 
 #hero a {
   text-decoration: none;
+}
+
+#masters {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#masters h2 {
+  font-size: 32px;
+  color: var(--color-text);
+  margin-bottom: 48px;
+  font-family: var(--font-heading);
+}
+
+#masters img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 3px solid var(--color-border);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reviews {
+  background-color: var(--color-bg);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#reviews h2 {
+  font-size: 32px;
+  color: var(--color-text);
+  margin-bottom: 48px;
+  font-family: var(--font-heading);
+}
+
+.review-text {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.review-author {
+  font-size: 14px;
+  color: var(--color-primary);
+  font-weight: 600;
 }
