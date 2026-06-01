@@ -282,31 +282,27 @@ footer {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    gap: 16px;
-    padding: 16px 20px;
+    gap: 8px;
+    padding: 12px 16px;
     text-align: center;
   }
 
-  html {
-    scroll-padding-top: 120px;
+  .logo {
+    font-size: 16px;
   }
-
-  .card {
-    width: 90%;
-    max-width: 400px;
-    padding: 20px 16px;
-  }
-
-}
 
   .nav-links {
-    gap: 16px;
+    gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .nav-links a {
-    font-size: 13px;
+    font-size: 11px;
+  }
+
+  html {
+    scroll-padding-top: 100px;
   }
 
   #hero h1 {
@@ -325,6 +321,7 @@ footer {
   .card {
     width: 90%;
     max-width: 400px;
+    padding: 20px 16px;
   }
 }
 
