@@ -12,7 +12,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 180px;
+  scroll-padding-top: 80px;
 }
 
 * {
@@ -291,14 +291,12 @@ footer {
     scroll-padding-top: 120px;
   }
 
-  /* остальные стили... */
-
   .card {
     width: 90%;
     max-width: 400px;
     padding: 20px 16px;
   }
-  
+
 }
 
   .nav-links {
