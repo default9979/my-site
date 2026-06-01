@@ -318,11 +318,11 @@ footer {
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .card h3 {
@@ -332,7 +332,7 @@ footer {
   .card p {
     font-size: 14px;
   }
-  
+
   #hero p {
     font-size: 16px;
   }
