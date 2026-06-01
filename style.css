@@ -292,6 +292,13 @@ footer {
   }
 
   /* остальные стили... */
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px 16px;
+  }
+  
 }
 
   .nav-links {
