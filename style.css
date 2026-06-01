@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: var(--font-body);
+  padding-top: 80px;
 }
 
 h2 {
@@ -35,8 +36,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   border-bottom: 1px solid var(--color-border);
 }
 
