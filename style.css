@@ -295,6 +295,10 @@ footer {
     font-size: 16px;
   }
 
+  body {
+    padding-top: 65px;
+  }
+  
   .nav-links {
     gap: 8px;
     flex-wrap: wrap;
