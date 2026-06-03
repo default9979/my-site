@@ -1,9 +1,6 @@
 const form = document.getElementById("contactForm");
 const successMsg = document.getElementById("successMsg");
 
-const TOKEN = "8997551715:AAEGcEgtfbN95gDQkfQQa_tjbmv8SzEEFvQ";
-const CHAT_ID = "6275779905";
-
 form.addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -16,15 +13,10 @@ form.addEventListener("submit", function(event) {
     return;
   }
 
-  const text = `🔔 Новая заявка!\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n💬 Вопрос: ${message}`;
-
-  fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+  fetch("http://localhost:3000/send", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: CHAT_ID,
-      text: text
-    })
+    body: JSON.stringify({ name, phone, message })
   })
   .then(function() {
     successMsg.style.display = "block";
