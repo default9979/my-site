@@ -34,3 +34,12 @@ form.addEventListener("submit", function(event) {
     document.getElementById("submitBtn").disabled = true;
   });
 });
+
+window.addEventListener('scroll', function() {
+  const btn = document.getElementById('scrollTop');
+  if (window.scrollY > 300) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
