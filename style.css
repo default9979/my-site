@@ -66,6 +66,15 @@ nav {
   transition: color 0.2s;
 }
 
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 28px;
+  cursor: pointer;
+}
+
 #hero {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -304,14 +313,24 @@ footer {
   }
 
   .nav-links {
-    gap: 12px;
-    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    margin-top: 12px;
     justify-content: center;
   }
 
   .nav-links a {
     font-size: 15px;
-    padding: 8px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
   }
 
   html {

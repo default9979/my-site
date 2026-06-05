@@ -35,3 +35,10 @@ window.addEventListener('scroll', function() {
     btn.classList.remove('visible');
   }
 });
+
+const burgerBtn = document.getElementById("burgerBtn");
+const navLinks = document.getElementById("navLinks");
+
+burgerBtn.addEventListener("click", function () {
+  navLinks.classList.toggle("open");
+});
