@@ -42,3 +42,11 @@ const navLinks = document.getElementById("navLinks");
 burgerBtn.addEventListener("click", function () {
   navLinks.classList.toggle("open");
 });
+
+const links = navLinks.querySelectorAll("a");
+
+links.forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+  });
+});
