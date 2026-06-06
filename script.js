@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event) {
   const message = document.getElementById("messageInput").value.trim();
   const errorMsg = document.getElementById("errorMsg");
   const phoneDigits = phone.replace(/\D/g, "");
-  
+
   errorMsg.style.display = "none";
 
   if (name === "" || phone === "") {
@@ -35,6 +35,10 @@ form.addEventListener("submit", function(event) {
     document.getElementById("phoneInput").value = "";
     document.getElementById("messageInput").value = "";
     document.getElementById("submitBtn").disabled = true;
+  })
+  .catch(function() {
+    errorMsg.textContent = "Что-то пошло не так. Попробуйте позже или позвоните нам.";
+    errorMsg.style.display = "block";
   });
 });
 
