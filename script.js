@@ -7,17 +7,21 @@ form.addEventListener("submit", function(event) {
   const name = document.getElementById("nameInput").value.trim();
   const phone = document.getElementById("phoneInput").value.trim();
   const message = document.getElementById("messageInput").value.trim();
+  const errorMsg = document.getElementById("errorMsg");
+  const phoneDigits = phone.replace(/\D/g, "");
+  
+  errorMsg.style.display = "none";
 
   if (name === "" || phone === "") {
-    alert("Пожалуйста, заполните все поля");
+    errorMsg.textContent = "Пожалуйста, заполните все поля";
+    errorMsg.style.display = "block";
     return;
   }
-
-  const phoneDigits = phone.replace(/\D/g, "");
-
-  if (phoneDigits.length < 10 || phoneDigits.length > 15) {
-   alert("Пожалуйста, введите корректный номер телефона");
-   return;
+  
+  if (phoneDigits.length < 10) {
+    errorMsg.textContent = "Пожалуйста, введите корректный номер телефона";
+    errorMsg.style.display = "block";
+    return;
   }
 
   fetch("https://salon-server-production-85f7.up.railway.app/send", {

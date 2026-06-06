@@ -277,6 +277,12 @@ nav {
   margin-top: 24px;
 }
 
+#errorMsg {
+  color: #c0392b;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
 footer {
   background-color: #2d2d2d;
   color: #7a7a7a;
