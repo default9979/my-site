@@ -13,6 +13,13 @@ form.addEventListener("submit", function(event) {
     return;
   }
 
+  const phoneDigits = phone.replace(/\D/g, "");
+
+  if (phoneDigits.length < 10 || phoneDigits.length > 15) {
+   alert("Пожалуйста, введите корректный номер телефона");
+   return;
+  }
+
   fetch("https://salon-server-production-85f7.up.railway.app/send", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
